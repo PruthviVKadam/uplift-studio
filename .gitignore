@@ -1,0 +1,22 @@
+# Manual steps stay LOCAL — never commit (deploy specifics, account notes)
+ManualSteps.md
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Data — downloaded via ManualSteps; large raw files not committed
+data/raw/
+*.csv.gz
+*.parquet
+
+# Secrets
+.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
