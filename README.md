@@ -41,6 +41,17 @@ targeting the top k%?" The honest sequel to a classic A/B test.
 
 _ATE on `visit` = 5.50 pp (treated − control) · seed 42 · a random policy captures 30% by definition._
 
+## Insights
+
+- **Average lift ≠ targetable lift.** The campaign clearly works on average (+5.50 pp visits), yet the
+  model's ability to rank *who* benefits is weak (Qini ≈ 0.016). A humbling, honest result: a treatment
+  can have a solid ATE and still be hard to target.
+- **Sleeping dogs are real.** A meaningful share of customers carry *negative* predicted uplift —
+  contacting them may hurt. Uplift modeling is the only framework that can even surface them.
+- **You must score uplift on its own terms.** Accuracy is meaningless without counterfactuals; ranking
+  by predicted uplift and measuring the realized treated−control gap (Qini/AUUC) is the only honest
+  scorecard — and it's why the top-30% policy captures 34.2% vs. 30% for random.
+
 ## Dataset
 
 **Hillstrom "MineThatData" e-mail campaign** — 64,000 customers; treatment = an e-mail was sent
