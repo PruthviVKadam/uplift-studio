@@ -8,9 +8,11 @@ from sklift.metrics import uplift_curve
 
 import data as data_mod
 import metrics as M
+from brand import apply_brand
 from models import MODEL_NAMES, make_models
 
 st.set_page_config(page_title="Uplift Studio", page_icon="🎯", layout="wide")
+apply_brand()
 
 
 @st.cache_data(show_spinner="Loading Hillstrom…")

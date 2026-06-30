@@ -1,0 +1,12 @@
+# Brand theme — Uplift Studio (causal / CATE). Dark base + violet accent to match the
+# portfolio case-study page. Streamlit auto-loads this from the working dir.
+[theme]
+base = "dark"
+primaryColor = "#845ef7"
+backgroundColor = "#0e0f14"
+secondaryBackgroundColor = "#171a23"
+textColor = "#e6e8ee"
+font = "sans serif"
+
+[server]
+headless = true
